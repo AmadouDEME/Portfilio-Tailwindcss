@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Portefeuille Pii</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+    />
+  </head>
+  <body
+    class="font-poppins flex justify-center items-center min-h-screen overflow-hidden box-border bg-whitesmoke"
+  >
+    <div
+      class="w-full max-w-[1500px] h-[600px] bg-white rounded-xl flex relative overflow-hidden"
+    >
+      <!-- Forme violette en diagonale -->
+      <div
+        class="absolute top-0 left-0 w-1/3 h-full bg-purple-800 rounded-md clip-diagonal"
+      ></div>
+
+      <!-- Section gauche -->
+      <div class="w-2/5 flex justify-center items-center z-10">
+        <div class="flex flex-col gap-4 absolute top-1/4 left-0">
+          <i
+            class="ri-settings-3-fill bg-gray-100 p-4 text-gray-600 text-2xl rounded-r-lg cursor-pointer"
+          ></i>
+          <i
+            class="ri-moon-line bg-gray-100 p-4 text-gray-600 text-2xl rounded-r-lg cursor-pointer"
+          ></i>
+        </div>
+        <img
+          src="tof/profil.jpeg"
+          alt="Photo de profil"
+          class="w-[90%] h-[90%] mt-10 ml-10 rounded-xl bg-whitesmoke shadow-md"
+        />
+      </div>
+
+      <!-- Section droite -->
+      <div class="w-3/5 p-10 z-10 flex flex-col justify-center">
+        <div class="flex items-baseline">
+          <span class="bg-purple-800 mx-4 w-6 h-1.5 rounded-md"></span>
+          <h1 class="text-5xl font-extrabold text-purple-800">Pii'Tech</h1>
+        </div>
+        <h2 class="text-4xl font-extrabold text-gray-600 mt-4 pl-10">
+          Full-stack Dev
+        </h2>
+        <p class="text-lg text-justify text-gray-600 mt-4 mr-10">
+          Je suis un développeur web basé au Sénégal, spécialisé dans la
+          création d'applications en JavaScript. <br />
+          Je suis passionné par le développement des logiciels qui amélioreront
+          la vie de ceux qui m'entourent.
+        </p>
+        <div class="mt-6">
+          <a
+            href="apropos.html"
+            class="block  text-gray-600 font-bold border border-[#6b21a8] justify-center pl-2 pr-10 pt-2 w-[255px] h-[50px] text-center no-underline text-[18px] overflow-hidden rounded-[35px] relative hover:text-white hover:bg-[#6b21a8] hover:cursor-pointer transition ease-in-out duration-200"
+          >
+            Plus Sur Moi
+            <i
+              class="ri-arrow-right-line bg-[#6b21a8] text-[18px] text-center leading-[50px] -inset-y-[2px] font-bold text-white rounded-full absolute right-0 w-[50px]"
+            ></i>
+          </a>
+        </div>
+        <!-- Section droite -->
+        <div
+        class="fixed right-4 mt-40 top-1/2 transform -translate-y-1/2 flex flex-col gap-4"
+      >
+        <a
+          href="index.html"
+          class="inline-flex items-center text-white no-underline cursor-pointe hover:rounded-full hover:px-4 hover:py-2 hover:transform hover:scale-110 transition-all duration-300"
+        >
+          <i
+            class="ri-home-4-fill bg-gray-100 text-gray-600 w-12 h-12 hover:bg-purple-800 hover:text-white rounded-full flex justify-center items-center text-xl ml-2"
+          ></i>
+        </a>
+        <a
+          href="apropos.html"
+          class="inline-flex items-center text-white no-underline cursor-pointer hover:rounded-full hover:px-4 hover:py-2 hover:transform hover:scale-110 transition-all duration-300"
+        >
+          <i
+            class="ri-user-fill bg-gray-100 text-gray-600 hover:bg-purple-800 hover:text-white w-12 h-12 rounded-full flex justify-center items-center text-xl ml-2"
+          ></i>
+        </a>
+        <a
+          href="Portefeuille.html"
+          class="inline-flex items-center text-white no-underline cursor-pointer hover:rounded-full hover:px-4 hover:py-2 hover:transform hover:scale-110 transition-all duration-300"
+        >
+          <i
+            class="ri-folder-open-fill bg-gray-100 hover:bg-purple-800 hover:text-white text-gray-600 w-12 h-12 rounded-full flex justify-center items-center text-xl ml-2"
+          ></i>
+        </a>
+        <a
+          href="contact.html"
+          class="inline-flex items-center text-white no-underline cursor-pointer  hover:rounded-full hover:px-4 hover:py-2 hover:transform hover:scale-110 transition-all duration-300"
+        >
+          <i
+            class="ri-mail-open-fill bg-gray-100 hover:bg-purple-800 hover:text-white  text-gray-600 w-12 h-12 rounded-full flex justify-center items-center text-xl ml-2"
+          ></i>
+        </a>
+      </div>
+      </div>
+    </div>
+
+    <style>
+      @layer utilities {
+        .clip-diagonal {
+          clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%);
+        }
+      }
+    </style>
+  </body>
+</html>
